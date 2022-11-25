@@ -19,9 +19,7 @@ const httpsServer = https
   .createServer(
     {
       cert: fs.readFileSync(env.cert),
-      key: fs.readFileSync(
-        "/etc/letsencrypt/live/dyma-projet.site/privkey.pem"
-      ),
+      key: fs.readFileSync(env.key),
     },
     app
   )
