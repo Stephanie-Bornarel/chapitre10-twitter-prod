@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "chapitre10-twitter-prod",
+      name: "twitter",
       script: "./bin/www",
       instances: "max",
       autorestart: true,
