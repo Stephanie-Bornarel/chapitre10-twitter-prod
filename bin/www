@@ -18,7 +18,7 @@ const httpServer = http
 const httpsServer = https
   .createServer(
     {
-      cert: "/etc/letsencrypt/live/www.dyma-projet.site/fullchain.pem",
-      key: "/etc/letsencrypt/live/www.dyma-projet.site/privkey.pem",
+      cert: fs.readFileSync(env.cert),
+      key: fs.readFileSync(env.key),
     },
     app).listen(env.portHttps);
