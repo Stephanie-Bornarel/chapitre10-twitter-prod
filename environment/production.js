@@ -3,5 +3,5 @@ module.exports = {
   cert: "/etc/letsencrypt/live/www.dyma-projet.site/fullchain.pem",
   key: "/etc/letsencrypt/live/www.dyma-projet.site/privkey.pem",
   portHttp: 8000,
-  portHttps: 443,
+  portHttps: 8443,
 };
