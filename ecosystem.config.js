@@ -1,6 +1,5 @@
 module.exports = {
-  apps: [
-    {
+  apps: [{
       name: "twitter",
       script: "./bin/www",
       instances: "max",
@@ -12,6 +11,6 @@ module.exports = {
       env_production: {
         NODE_ENV: "production",
       },
-    },
-  ],
+    }],
+ 
 };
