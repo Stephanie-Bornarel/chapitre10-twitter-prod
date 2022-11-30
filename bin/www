@@ -21,4 +21,4 @@ const httpsServer = https
       cert: fs.readFileSync(env.cert),
       key: fs.readFileSync(env.key),
     },
-    app).listen(Number(env.portHttps)) || 3343;
+    app).listen(env.portHttps);
