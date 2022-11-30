@@ -12,8 +12,8 @@ const httpServer = http
       }${req.url}`
     });
     res.end();
-  });
-  .listen(env.portHttp);
+  }).listen(env.portHttp);
+  
 
 const httpsServer = https
   .createServer(
