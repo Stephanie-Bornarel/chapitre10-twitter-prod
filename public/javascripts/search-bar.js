@@ -2,9 +2,9 @@ let menuContainer;
 
 window.addEventListener("click", () => {
   menuContainer.innerHTML = "";
-})
-window.addEventListener('DOMContentLoaded', () => {
-  menuContainer = document.querySelector("#search-menu-container")
+});
+window.addEventListener("DOMContentLoaded", () => {
+  menuContainer = document.querySelector("#search-menu-container");
   menuContainer.addEventListener("click", (e) => {
     e.stopPropagation();
   });
@@ -18,13 +18,14 @@ window.addEventListener('DOMContentLoaded', () => {
       clearTimeout(ref);
     }
     ref = setTimeout(() => {
-      axios.get("/users?search=" + value)
-        .then(response => {
-          console.log(response);
+      axios
+        .get("/users?search=" + value)
+        .then((response) => {
+          menuContainer.innerHTML = response.data;
         })
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
-        })
+        });
     }, 2000);
-  })
-})
+  });
+});

@@ -12,13 +12,21 @@
 .navbar {
   border-bottom:1px solid rgba(0, 0, 0, 0.25);
 }
+img {
+  border-radius: 50%;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+}
 
 .img-fluid {
   max-height: 100px;
+  max-width: 100px;
+  width: 80px;
+  height: 80px;
+
 }
 
 body {
-  background-color:#f8f9fa;
+  background-color:#f0f3f7;
 }
 
 .tweet-element {
@@ -79,3 +87,20 @@ body {
   background: #eee;
   transition: background 0.2s;
 }
+
+.btn-follow {
+  color: #007bff;
+  border-radius: 30px;
+  font-weight: bold;
+  border-width: 2px;
+}
+
+.btn-follow:hover {
+  color: white;
+}
+
+.btn-unfollow {
+  border-radius: 30px;
+  font-weight: bold;
+}
+
